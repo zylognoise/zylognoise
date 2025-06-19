@@ -1,0 +1,129 @@
+/* Estilo moderno (por defecto) */
+body {
+    background-color: #0d0d0d;
+    color: #d0ffd0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    color: #aaffaa;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #004400;
+    color: #ffffcc;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #006600;
+}
+
+main {
+    padding: 1rem;
+}
+
+.post {
+    background-color: #111;
+    border-left: 4px solid #33ff33;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.post img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post h2 {
+    color: #bfff00;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: #66ff66;
+}
+
+/* Modo terminal estilo retro */
+
+/* modo terminal */
+body.terminal-mode {
+    background-color: #0a1a0a; /* verde oscuro */
+    color: #00ff00; /* verde fosforescente */
+    font-family: 'Courier New', Courier, monospace;
+    filter: contrast(1.2) brightness(0.9);
+    /* Opcional: agregar sombra tenue para el texto */
+    text-shadow:
+      0 0 5px #00ff00,
+      0 0 10px #00ff00,
+      0 0 20px #00ff00;
+}
+
+body.terminal-mode::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(0,0,0,0.1) 50%, transparent 50%);
+    background-size: 100% 4px;
+    z-index: 9999;
+}
+
+/* Opcional: efecto de parpadeo */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    40% { opacity: 0.7; }
+    60% { opacity: 0.85; }
+}
+body.terminal-mode {
+    animation: flicker 4s infinite;
+}
+
+body.terminal-mode header,
+body.terminal-mode footer {
+    background-color: #000000;
+    color: #ffcc00;
+}
+
+body.terminal-mode h1,
+body.terminal-mode h2 {
+    color: #ffaa00;
+}
+
+body.terminal-mode button {
+    background-color: #000000;
+    color: #ffcc00;
+    border: 1px solid #ffcc00;
+}
+
+body.terminal-mode .post {
+    background-color: #000000;
+    border-left: 4px solid #ffcc00;
+}
+
+body.terminal-mode img{
+    display: none;
+}

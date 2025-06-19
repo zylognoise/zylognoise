@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zylog And Noise Music</h1>
+        <button id="toggleTheme">Cambiar a Modo Terminal</button>
+    </header>
+
+    <main>
+        <article>
+            <img src="" alt="Logo Zylog">
+            <h2>Hola Al mundo</h2>
+             <p>Escrito por Zylog</p>
+             <p></p>
+
+        </article>
+
+
+        <article class="post">
+            <img src="img/massona.jpg" alt="Massona live session">
+            <a href="/blogmusica/massona.html"> <h2>Masonna: El samurái del ruido japonés</h2></a>
+            <p>Escrito por Zylog</p>
+            <p>
+                Massona El Dios del Ruido
+            </p>
+        </article>
+
+        <article class="post">
+            <img src="img/hanatarash.jpg" alt="Foto de Banda 2">
+            <h2>HanaTarash</h2>
+            <p>Escrito por Zylog</p>
+            <p>
+               HanaTarash,showshok, excavadoras, sierras y machetes
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blog de Música por Zylog</p>
+    </footer>
+
+    <script>
+        const button = document.getElementById('toggleTheme');
+        button.addEventListener('click', () => {
+            document.body.classList.toggle('terminal-mode');
+            button.textContent = document.body.classList.contains('terminal-mode')
+                ? 'Cambiar a Modo Moderno'
+                : 'Cambiar a Modo Terminal';
+        });
+    </script>
+</body>
+</html>
