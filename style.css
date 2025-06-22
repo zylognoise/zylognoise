@@ -15,6 +15,27 @@ header {
     align-items: center;
 }
 
+header h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+section article{
+    transition: box-shadow 0.3s ease;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+section article:hover {
+        box-shadow: 0 0.1rem 0.4rem grey;
+}
+
 h1 {
     margin: 0;
     color: #aaffaa;
@@ -36,6 +57,10 @@ button:hover {
 
 main {
     padding: 1rem;
+}
+
+a{
+ text-decoration: none;
 }
 
 .post {
@@ -123,6 +148,11 @@ body.terminal-mode .post {
     background-color: #000000;
     border-left: 4px solid #ffcc00;
 }
+
+body.terminal-mode img{
+    display: none;
+}
+
 
 body.terminal-mode img{
     display: none;
